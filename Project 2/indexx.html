@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <style>
+        *
+        {
+            margin:0;
+            padding:0;
+        }
+        body
+        {
+           background-color: lightgrey;
+           color: #212121;
+           scroll-behavior: smooth;
+           font-size: 1.5rem;
+
+        }
+        nav
+        {
+         text-align: center;
+         text-decoration: underline;
+         text-shadow: 0.5px 0.5px;
+        }
+        div
+        {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 25px 25px;
+          margin-top: 25px;
+          border:2px solid;
+          margin-left:25px;
+          margin-left:25px;
+          margin-right:25px;
+          
+        }
+        #weight-guide
+        {
+            display: inline-block;
+        }
+        .guideline
+        {
+            text-align: center;
+            text-decoration: underline;
+            text-shadow: 0.5px 0.5px;
+        }
+        #weight-guide li
+        {
+            list-style: none;
+        }
+        .calculate
+        {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } 
+        button
+        {
+          background-color: orange;
+          width: 250px;
+          height: 50px;
+          border-radius: 75px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>BMI CALCULATOR</h1>
+    </nav>
+    <section>
+        <div class="container">
+            <form>
+                <p><label>Height in cm:</label>
+                    <input type="text" id="height" placeholder="Height">
+                </p>
+                <p><label>Weight in kg:</label>
+                    <input type="text" id="weight" placeholder="Weight">
+                </p>
+                <div class="calculate"><button>Calculate</button></div>
+                
+                <div id="results"></div>
+                <div id="weight-guide">
+                    <h3 class="guideline">Weight Guide</h3>
+                    <ul>
+                        <li>BMI is less than 18:Underweight range</li>
+                        <li>BMI is 18.5 to 24.9:Healthy Weight range</li>
+                        <li>BMI is 25.0 to 29.9:Overweight range</li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="./index.js" charset="UTF-8"></script>
+</body>
+</html>
